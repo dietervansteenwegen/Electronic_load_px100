@@ -114,7 +114,7 @@ class MainWindow(QtWidgets.QMainWindow):
             data.plot(ax=self.twinax, x='time', y=['current'], style='r')
             self.twinax.legend(loc='center right')
             self.twinax.set_ylabel('Current, A')
-            self.twinax.set_ylim(0, 10)
+            # self.twinax.set_ylim(0, 10)
             self.canvas.draw()
 
     def status_update(self, status):
